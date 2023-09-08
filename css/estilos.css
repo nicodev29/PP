@@ -225,25 +225,19 @@ h5 {
 
 .icons {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start; /* Alinea los íconos al inicio del contenedor */
   align-items: center;
   flex-flow: row nowrap;
 }
 
-.icons a {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-flow: row nowrap;
-  background: #f8b95a;
-  border-radius: 50%;
-  color: #FFF;
-  transition: all .5s;
+.icons span {
+  display: inline-block;  
+  width: 40px; /* Aumenta el tamaño del ícono. Modifica a tu gusto */
+  height: 40px;
+  background-size: cover; /* Asegura que la imagen cubra todo el espacio del span */
+  margin-right: 10px; /* Espacio entre íconos. Ajusta según tu preferencia */
 }
 
-.icons a:hover {
-  background: #f8b95a;
-}
 
 .btn, .btn-white, .btn-primary {
   width: 170px;
@@ -311,27 +305,27 @@ h5 {
 }
 
 .card:nth-child(1) {
-  background: url(../img/product1.jpg);
+  background: url(/css/img/oklahoma.jpg);
 }
 
 .card:nth-child(2) {
-  background: url(../img/product2.jpg);
+  background: url(/css/img/newRoyal.jpg);
 }
 
 .card:nth-child(3) {
-  background: url(../img/product3.jpg);
+  background: url(/css/img/noName.jpg);
 }
 
 .card:nth-child(4) {
-  background: url(../img/product4.jpg);
+  background: url(/css/img/crispyBacon.jpg);
 }
 
 .card:nth-child(5) {
-  background: url(../img/product5.jpg);
+  background: url(/css/img/fans3.jpg);
 }
 
 .card:nth-child(6) {
-  background: url(../img/product6.jpg);
+  background: url(/css/img/toast.jpg);
 }
 
 nav {
@@ -365,7 +359,7 @@ nav a:hover {
   flex-flow: column nowrap;
   width: 100%;
   height: 600px;
-  background: url(../img/image1.jpg);
+  background: url(/css/img/papas.jpg);
   background-size: cover;
   background-position: bottom;
   clip-path: polygon(0 0, 100% 0, 100% 80%, 0% 100%);
@@ -432,11 +426,12 @@ nav a:hover {
   flex-flow: column nowrap;
   width: 100%;
   height: 500px;
-  background: url(../img/image3.jpg);
+  background: url(/css/img/interior.jpg);
   background-size: cover;
   background-attachment: fixed;
   background-position: center;
 }
+
 
 .oferta * {
   position: relative;
@@ -462,24 +457,8 @@ nav a:hover {
   width: 60%;
 }
 
-.footer__container .info .icons a {
-  width: 50px;
-  height: 50px;
-}
 
 .footer__container .contact .icons {
   width: 40%;
 }
 
-.footer__container .contact .icons a {
-  width: 50px;
-  height: 50px;
-}
-
-.footer__container .contact .icons a {
-  background: transparent;
-}
-
-.footer__container .contact .icons a:hover {
-  background: transparent;
-}
