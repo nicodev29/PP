@@ -305,27 +305,27 @@ h5 {
 }
 
 .card:nth-child(1) {
-  background: url(/css/img/oklahoma.jpg);
+  background: url(../css/img/oklahoma.jpg);
 }
 
 .card:nth-child(2) {
-  background: url(/css/img/newRoyal.jpg);
+  background: url(../css/img/newRoyal.jpg);
 }
 
 .card:nth-child(3) {
-  background: url(/css/img/noName.jpg);
+  background: url(../css/img/noName.jpg);
 }
 
 .card:nth-child(4) {
-  background: url(/css/img/crispyBacon.jpg);
+  background: url(../css/img/fans2.jpg);
 }
 
 .card:nth-child(5) {
-  background: url(/css/img/fans3.jpg);
+  background: url(../css/img/fans3.jpg);
 }
 
 .card:nth-child(6) {
-  background: url(/css/img/toast.jpg);
+  background: url(../css/img/toast.jpg);
 }
 
 nav {
@@ -359,7 +359,7 @@ nav a:hover {
   flex-flow: column nowrap;
   width: 100%;
   height: 600px;
-  background: url(/css/img/papas.jpg);
+  background: url(../css/img/papas.jpg);
   background-size: cover;
   background-position: bottom;
   clip-path: polygon(0 0, 100% 0, 100% 80%, 0% 100%);
@@ -426,7 +426,7 @@ nav a:hover {
   flex-flow: column nowrap;
   width: 100%;
   height: 500px;
-  background: url(/css/img/interior.jpg);
+  background: url(../css/img/interior.jpg);
   background-size: cover;
   background-attachment: fixed;
   background-position: center;
