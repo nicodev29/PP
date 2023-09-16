@@ -1,5 +1,15 @@
 @import url(https://fonts.googleapis.com/css?family=Poppins:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic);
 @import url(https://fonts.googleapis.com/css?family=Merienda:regular,700);
+
+@font-face {
+  font-family: 'Aristotelica Pro';
+  src: url('../fonts/ari2.otf') format('woff2');
+  font-weight: bolder;
+  font-style: normal;
+}
+
+
+
 * {
   margin: 0;
   padding: 0;
@@ -24,10 +34,10 @@ header, section {
 }
 
 h1.tprincipal {
-  font-family: "Merienda";
-  color: #FFF;
+  font-family: "Aristotelica Pro";
+  color: #f8b95a;
   font-size: 12vmin;
-  font-weight: bold;
+  font-weight: bolder;
 }
 
 h1 {
@@ -40,7 +50,7 @@ h1 {
 }
 
 h2.tsecundario {
-  font-size: 4vmin;
+  font-size: 3vmin;
   text-align: center;
   color: #FFF;
   letter-spacing: 6px;
@@ -462,3 +472,52 @@ nav a:hover {
   width: 40%;
 }
 
+.email-container {
+  background-color: #f8b95a; /* Color de fondo, puedes cambiarlo */
+  padding: 20px; 
+  border-radius: 5px; 
+  width: 80%; 
+  max-width: 500px; /* Ancho máximo del formulario */
+  margin: 40px auto; /* Centra el contenedor horizontalmente */
+}
+
+.email-container form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px; /* Espacio entre los elementos */
+}
+
+.email-container label {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.email-container input[type="text"],
+.email-container input[type="tel"],
+.email-container textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd; 
+  border-radius: 4px; 
+  font-size: 16px;
+}
+
+.email-container textarea {
+  resize: vertical; /* El usuario solo puede redimensionar verticalmente */
+}
+
+.submit-button {
+  background-color: #222; /* Color de fondo del botón, puedes cambiarlo */
+  color: #fff; /* Color de texto del botón */
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+
+  /* Añadir efecto al pasar el ratón */
+}
+
+.submit-button:hover {
+  background-color: #222;
+}

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Oklahoma Club</title>
+     <link rel="stylesheet" href="css/estilos.css">
+     <link rel="stylesheet" href="node_modules/@fortawesome/fontawesome-free/css/all.min.css">
+</head>
+
+<body>
+   <!-- Menu principal -->
+     <nav class="navbar">
+          <a href="index.html">Inicio</a>
+          <a href="contact.html">Contacto</a>
+     </nav>
+
+
+     <!-- Header -->     
+     <header class="header">
+          <div class="header__content"></div>
+          <h1 class="tprincipal">OKLAHOMA</h1>
+          <h2 class="tsecundario">HAMBURGUESAS SIMPLES Y PAPAS FRITAS</h2>
+     </header>
+
+     <!-- Enviar email --> 
+     <div class="email-container box-center">
+          <form action="send_mail.php" method="post">
+          <label for="nombre">Nombre:</label>
+          <input type="text" id="nombre" name="nombre" required>
+          
+          <label for="telefono">Teléfono:</label>
+          <input type="tel" id="telefono" name="telefono" required>
+          
+          <label for="mensaje">Mensaje:</label>
+          <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+          
+          <input type="submit" class="submit-button" value="Enviar">
+          </form>
+     </div>
+ 
+    
+     <!-- Footer -->
+
+     <footer class="footer bg-solid1">
+        <div class="footer__container box-center">
+             <div class="info">
+                  <h5 class="text-lite text-primario margin-bottom">Oklahoma</h5>
+                  <p class="line-space">Con mas de tres años de trayectoria ininterrumpida, hoy Oklahoma esta
+                       posicionada
+                       como una de las mejores hamburgueserias de Cordoba.
+                  </p>
+                  <div class="icons marginy">
+                       <a href="https://wa.me/+5493517682448"><span
+                                 style="background-image: url(css/img/wsppicon.png);"></span></a>
+                       <a href="https://instagram.com/oklahoma.club"><span
+                                 style="background-image: url(css/img/instapng.png);"></span></a>
+                  </div>
+             </div>
+        </div>
+   </footer>
+
+</body>
+
+</html>
