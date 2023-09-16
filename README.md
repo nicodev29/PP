@@ -1,5 +1,4 @@
-# oklahomasite
-Proyecto Practicas Teclab
+# Landing Page para Local de Hamburguesas
 
 Deploy link: 
 
