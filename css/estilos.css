@@ -153,7 +153,7 @@ h5 {
 }
 
 .text-lite {
-  font-family: "Merienda";
+  font-family: "Aristotelica Pro";
 }
 
 .border {
@@ -520,4 +520,8 @@ nav a:hover {
 
 .submit-button:hover {
   background-color: #222;
+}
+
+.titulo_mid {
+  color: #f8b95a;
 }
