@@ -26,21 +26,41 @@
           <h2 class="tsecundario">HAMBURGUESAS SIMPLES Y PAPAS FRITAS</h2>
      </header>
 
-     <!-- Enviar mensaje via form -->
-     <div class="email-container box-center">
-          <form action="https://formspree.io/f/mgejzzdn" method="post">
-               <label for="nombre">Nombre:</label>
-               <input type="text" id="nombre" name="nombre" required>
+     <!-- Sección de Pedido -->
+     <section class="order-section">
+          <div class="order-section__content box-center">
+               <h1 class="titulo_mid">¿Te tentaste?</h1>
+               <a href="https://pedix.app/oklahoma/" class="order-button">Hace tu pedido aca!</a>
+          </div>
 
-               <label for="telefono">Teléfono:</label>
-               <input type="tel" id="telefono" name="telefono" required pattern="^[0-9]{7,15}$">
+     </section>
 
-               <label for="mensaje">Mensaje:</label>
-               <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+     <!-- Menu -->
+     <section class="menu box-center">
 
-               <input type="submit" class="submit-button" value="Enviar">
-          </form>
-     </div>
+          <div class="menu__container">
+               <div class="card">
+                    <div class="card-container">
+                         <h5 class="card-title text-center">Oklahoma</h5>
+                    </div>
+               </div>
+
+               <div class="card">
+                    <div class="card-container">
+                         <h5 class="card-title text-center">New Royal</h5>
+                    </div>
+               </div>
+
+               <div class="card">
+                    <div class="card-container">
+                         <h5 class="card-title text-center">Party</h5>
+                    </div>
+               </div>
+
+          </div>
+
+     </section>
+
      <!-- Footer -->
 
      <footer class="footer bg-solid1">
@@ -62,7 +82,6 @@
      </footer>
 
 
-     // Validación de número de teléfono - en proceso
      <script> document.querySelector("form").addEventListener("submit", function (e) {
                const telefonoInput = document.getElementById("telefono");
                const telefono = telefonoInput.value;
@@ -70,7 +89,7 @@
                if (!/^[0-9]{7,15}$/.test(telefono)) {
                     e.preventDefault();
                     alert("Por favor, ingresa un número de teléfono válido.");
-                    telefonoInput.focus();
+                    telefonoInput.focus(); // Establece el foco en el campo inválido
                }
           });
      </script>

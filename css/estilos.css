@@ -2,13 +2,11 @@
 @import url(https://fonts.googleapis.com/css?family=Merienda:regular,700);
 
 @font-face {
-  font-family: 'Aristotelica Pro';
-  src: url('../fonts/ari2.otf') format('woff2');
+  font-family: "Aristotelica Pro";
+  src: url("../fonts/ari2.otf") format("woff2");
   font-weight: bolder;
   font-style: normal;
 }
-
-
 
 * {
   margin: 0;
@@ -24,7 +22,8 @@ a {
   text-decoration: none;
 }
 
-header, section {
+header,
+section {
   padding: 100px 0;
 }
 
@@ -41,7 +40,7 @@ h1.tprincipal {
 }
 
 h1 {
-  color: #FFF;
+  color: #fff;
   font-size: 10vmin;
   font-weight: 600;
   letter-spacing: 2px;
@@ -52,7 +51,7 @@ h1 {
 h2.tsecundario {
   font-size: 3vmin;
   text-align: center;
-  color: #FFF;
+  color: #fff;
   letter-spacing: 6px;
   font-weight: 400;
 }
@@ -157,7 +156,7 @@ h5 {
 }
 
 .border {
-  border: 1px solid #CCC;
+  border: 1px solid #ccc;
 }
 
 .rounded {
@@ -223,8 +222,10 @@ h5 {
   }
 }
 
-.overlay, .header::before, .oferta::before {
-  content: '';
+.overlay,
+.header::before,
+.oferta::before {
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
@@ -241,15 +242,16 @@ h5 {
 }
 
 .icons span {
-  display: inline-block;  
+  display: inline-block;
   width: 40px; /* Aumenta el tamaño del ícono. Modifica a tu gusto */
   height: 40px;
   background-size: cover; /* Asegura que la imagen cubra todo el espacio del span */
   margin-right: 10px; /* Espacio entre íconos. Ajusta según tu preferencia */
 }
 
-
-.btn, .btn-white, .btn-primary {
+.btn,
+.btn-white,
+.btn-primary {
   width: 170px;
   height: 40px;
   border: none;
@@ -259,22 +261,22 @@ h5 {
   font-size: 18px;
   font-weight: 500;
   cursor: pointer;
-  transition: all .5s;
+  transition: all 0.5s;
 }
 
 .btn-white {
-  background: #FFF;
+  background: #fff;
   color: #f8b95a;
 }
 
 .btn-white:hover {
   background: #f8b95a;
-  color: #FFF;
+  color: #fff;
 }
 
 .btn-primary {
   background: #f8b95a;
-  color: #FFF;
+  color: #fff;
 }
 
 .btn-primary:hover {
@@ -300,7 +302,7 @@ h5 {
   height: 100%;
   background: rgba(255, 255, 255, 0.7);
   opacity: 0;
-  transition: all .5s;
+  transition: all 0.5s;
 }
 
 .card-container .card-title {
@@ -311,7 +313,7 @@ h5 {
 }
 
 .card:hover .card-container {
-  opacity: 1;
+  opacity: 0.8;
 }
 
 .card:nth-child(1) {
@@ -354,7 +356,7 @@ nav {
 nav a {
   color: #222;
   padding: 0 20px;
-  transition: all .3s;
+  transition: all 0.3s;
 }
 
 nav a:hover {
@@ -406,7 +408,7 @@ nav a:hover {
 }
 
 .about__container .container_image::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 40px;
   left: -40px;
@@ -421,7 +423,7 @@ nav a:hover {
   height: 310px;
   object-fit: cover;
   box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.2);
-  transition: all .5s;
+  transition: all 0.5s;
 }
 
 .about__container .container_image img:hover {
@@ -442,7 +444,6 @@ nav a:hover {
   background-position: center;
 }
 
-
 .oferta * {
   position: relative;
 }
@@ -460,13 +461,12 @@ nav a:hover {
   grid-template-rows: auto;
   gap: 20px;
   padding: 50px 0;
-  color: #FFF;
+  color: #fff;
 }
 
 .footer__container .info .icons {
   width: 60%;
 }
-
 
 .footer__container .contact .icons {
   width: 40%;
@@ -474,9 +474,9 @@ nav a:hover {
 
 .email-container {
   background-color: #f8b95a; /* Color de fondo, puedes cambiarlo */
-  padding: 20px; 
-  border-radius: 5px; 
-  width: 80%; 
+  padding: 20px;
+  border-radius: 5px;
+  width: 80%;
   max-width: 500px; /* Ancho máximo del formulario */
   margin: 40px auto; /* Centra el contenedor horizontalmente */
 }
@@ -497,8 +497,8 @@ nav a:hover {
 .email-container textarea {
   width: 100%;
   padding: 10px;
-  border: 1px solid #ddd; 
-  border-radius: 4px; 
+  border: 1px solid #ddd;
+  border-radius: 4px;
   font-size: 16px;
 }
 
@@ -524,4 +524,36 @@ nav a:hover {
 
 .titulo_mid {
   color: #f8b95a;
+}
+
+.order-section {
+  background-color: #f8b95a; /* Color naranja como referencia. */
+  padding: 50px 0;
+  text-align: center;
+}
+
+.order-section__content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.titulo_mid {
+  color: #fff;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.order-button {
+  display: inline-block;
+  background-color: #333; /* Color de fondo oscuro. */
+  color: #f8b95a;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.order-button:hover {
+  background-color: #555; /* Oscurecer el botón un poco en hover. */
 }
